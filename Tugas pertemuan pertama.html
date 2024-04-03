@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ririn Nidaul Hasanah_2120080_WPII_2.6A</title>
+<style>
+    /* CSS style */
+    body {
+        font-family:arial, sans-serlf;
+    }
+    #inputField {
+        padding: 10px;
+        font-size: 16px;
+    }
+    #displayArea {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+</style>
+</head>
+<body>
+    <!-- HTML content-->
+    <input type="text" id="inputField" placsholder="Enter text...">
+    <button onclick="displayText()">Display</button>
+    <div id="displayArea" ></div>
+
+    <!--JavaScript code-->
+    <script>
+        function displayText() {
+            // Get the input value
+            var inputText = document.getElementById("inputField").value;
+
+            // Get the display area
+            var displayArea = document.getElementById("displayArea");
+
+            // Display the input value
+            displayArea.innerText = inputText;
+
+        }
+    </script>
+</body>
+</html>
